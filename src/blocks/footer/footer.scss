@@ -1,0 +1,35 @@
+.footer {
+  margin-top: 149px;
+  border-top: 1px solid #E0E0E0;
+  
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 182px;
+    padding: 20px 6.094vw;
+    font-size: 18px;
+  }
+  
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+
+    @include media-breakpoint-down(xs) { align-items: flex-start; }
+  }
+  
+  &__sitemap {
+    display: flex;
+
+    @include media-breakpoint-down(xs) { flex-direction: column; }
+  }
+  
+  &__link {
+    padding-right: 30px;
+    color: $black;
+  }
+  
+  &__copyright { color: #828282; }
+}

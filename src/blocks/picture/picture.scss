@@ -1,0 +1,12 @@
+.picture {
+  display: block;
+  width: 425px;
+  height: 200px;
+  margin-bottom: 25px;
+  background-size: cover;
+
+  @include media-breakpoint-down(xs) {
+    width: 73.785vw;
+    height: 34.722vw;
+  }
+}

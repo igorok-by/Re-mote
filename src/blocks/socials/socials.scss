@@ -1,0 +1,23 @@
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
+  
+  &__item {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $primary;
+
+    @include transition;
+    
+    &--fb { background-image: url(../img/socials__item--fb.svg); }
+    
+    &--tw { background-image: url(../img/socials__item--tw.svg); }
+  }
+
+  &__item:hover { background-color: #EA555D; }
+}

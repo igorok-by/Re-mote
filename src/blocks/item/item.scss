@@ -1,0 +1,48 @@
+.item {
+  width: 425px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba($black, .18);
+  border-radius: 5px;
+
+  @include transition;
+
+  &:hover { box-shadow: 0 10px 30px rgba($black, .25); }
+
+  &__picture {
+    height: 200px;
+    background-size: cover;
+
+    @include media-breakpoint-down(xs) { height: 42.5vw; }
+  }
+  
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 270px;
+    padding-top: 20px;
+    padding-right: 18px;
+    padding-bottom: 16.8px;
+    padding-left: 20px;
+    font-size: 16px;
+  }
+  
+  &__content-top {
+
+    h3 {
+      max-width: 308px;
+      margin-bottom: 0;
+      padding-bottom: 20px;
+      font-size: 1.5em;
+    }
+
+    p { font-size: 1em; }
+  }
+  
+  &__date {
+    line-height: 28px;
+    font-size: 1.125em;
+    color: #BDBDBD;
+  }
+}
